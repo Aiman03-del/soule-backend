@@ -7,12 +7,12 @@ import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
-    ConfigModule.forRoot({ isGlobal: true }), // ⬅️ এইটা লাগবে .env পড়তে
+    ConfigModule.forRoot({ isGlobal: true }),
     TypeOrmModule.forRoot({
       type: 'mysql',
       host: process.env.DB_HOST,
       port: +(process.env.DB_PORT ?? 3306),
-      username: process.env.DB_USERNAME, // ✅ এটা ছিল না!
+      username: process.env.DB_USERNAME, 
       password: process.env.DB_PASSWORD,
       database: process.env.DB_NAME,
       autoLoadEntities: true,
