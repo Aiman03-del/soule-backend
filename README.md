@@ -96,7 +96,7 @@ npm run start:dev
 
 ---
 
-## Demo Server
+## Server
 
 [https://soule-backend-h8dn.onrender.com/](https://soule-backend-h8dn.onrender.com/)
 
